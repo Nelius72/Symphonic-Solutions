@@ -1,0 +1,297 @@
+body {
+    height: 100%;
+    /* background: url(https://wallpapercrafter.com/desktop/211290-a-black-and-white-shot-of-an-orchestra-performing-.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+  
+}
+.presentacion{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+div.bienvenida {
+
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    background-color: #000000;
+    color: #070707;
+    height: auto;
+   
+}
+
+
+.bienvenida h1 {
+    text-align: center;
+    padding-right: 100px;
+    margin: 0; /* Añade margen cero para evitar espacios adicionales */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos con un ancho máximo de 768px */
+    .bienvenida h1 {
+        padding-right: 0; /* Elimina el relleno derecho */
+        padding-left: 10px; /* Añade un relleno izquierdo para mantener centrado el texto */
+    }
+}
+
+
+div.bienvenida h2 {
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+div.comunidad {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 100px;
+    background-color: white;
+    width: fit-content;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@import "compass/css3";
+
+/* @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Dosis:200,400,600); */
+
+/* body {
+  background-color:#5086c1;
+} */
+.bienvenida h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    position: absolute;
+    text-align: center;
+    display: block;
+    color:whitesmoke;
+    /* text-decoration: underline; */
+    top: 300px;
+    width: 100%;
+    margin-top: -55px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* opacity: 0; */
+    -webkit-animation: anim 3.2s ease-out forwards 1s;
+    animation: anim 3.2s ease-out forwards 1s;
+    text-shadow: #027ffc;
+}
+
+strong {
+    display: block;
+    font-weight: 400;
+    color: #000;
+}
+
+
+@-webkit-keyframes anim {
+    0% {
+        text-shadow: 0 0 50px black;
+        letter-spacing: 80px;
+        /* opacity: 0; */
+        -webkit-transform: rotateY(-90deg);
+    }
+
+    50% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        -webkit-transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        -webkit-transform: rotateY(0deg) translateZ(60px);
+    }
+
+    100% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        letter-spacing: 8px;
+        -webkit-transform: rotateY(0deg) translateZ(100px);
+    }
+
+}
+
+@keyframes anim {
+    0% {
+        text-shadow: 0 0 50px black;
+        letter-spacing: 80px;
+        /* opacity: 0; */
+        -moz-transform: rotateY(-90deg);
+    }
+
+    50% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        -moz-transform: rotateY(0deg);
+    }
+
+    75% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        -moz-transform: rotateY(0deg) translateZ(60px);
+    }
+
+    100% {
+        text-shadow: 0 0 1px black;
+        /* opacity: 0.8; */
+        letter-spacing: 8px;
+        -moz-transform: rotateY(0deg) translateZ(100px);
+    }
+
+}
+
+
+
+
+
+
+:root {
+    --background-dark: #ffffff;
+    --text-light: white;
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    /* background: url(https://parnumusicfestival.ee/wp-content/uploads/2021/03/Conductors-2020.png);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+ 
+  
+}
+
+
+.hero-section {
+    align-items: flex-start;
+    /* background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%); */
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+    
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+}
+
+@media(min-width: 540px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 960px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.card {
+    list-style: none;
+    position: relative;
+}
+
+.card:before {
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card__background {
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition:
+        filter 200ms linear,
+        transform 200ms linear;
+}
+
+.card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover>.card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+}
+
+.card__category {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+}
+
+.card__heading {
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+}
+
+.contenedor1{
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.839);
+}
+
+/* .contenedor2{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.839);
+} */

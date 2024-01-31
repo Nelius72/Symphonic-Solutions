@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+
+}
+
+.fc-event .fc-event-main {
+  background-color: none;
+}
+
+#external-events {
+  top: 20px;
+  left: 20px;
+  width: 300px;
+  /* Ajusta el valor según tus necesidades */
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  background: rgb(177, 18, 18);
+}
+
+.demo-topbar+#external-events {
+  /* will get stripped out */
+  top: 60px;
+}
+
+#external-events .fc-event {
+  cursor: move;
+  margin: 3px 0;
+
+}
+
+#calendar-container {
+
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#calendar {
+  max-width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.839);
+}
+
+
+#external-events {
+  margin-top: 20px;
+  margin-right: 50px;
+  flex: 1;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.839);
+}
+
+#calendar {
+  flex: 3;
+  background-color: rgb(255, 255, 255);
+}
+
+.instrucciones {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+
+}
+
+.ins {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+
+}
+
+.conclusion p {
+  display: flex;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  margin-bottom: 10px;
+
+}
+
+
+.info {
+  
+  margin-top: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  /* margin-right: 1000px; */
+  text-align: center;
+  /* width:min-content; */
+
+ 
+  
+}
+
+
+.info img {
+  width: 40px;
+  height: 40px;
+  text-align: right;
+ 
+}
+
+.info img:hover{
+  cursor:pointer;
+}
+
+
+
